@@ -21,7 +21,8 @@ function RenderResult() {
   }, []);
   return(
     <div>
-      <h1>{apiResponse.title}</h1>
+      <h1>Daliy Random XKCD Comic</h1>
+      <h2>{apiResponse.title} (#{apiResponse.num})</h2>
       {/* <p>{JSON.stringify(apiResponse)}</p> */}
       <img
       src={apiResponse.img}
