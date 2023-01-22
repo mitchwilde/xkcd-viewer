@@ -15,9 +15,11 @@ const fetchOptions = {
 const corsOptions = {
     origin: "http://localhost:3000"
 };
+
 function getRandomInt(max) {
     return Math.floor(Math.random() * max);
-    }
+}
+//"X-Cybozu-API-Token: YOUR_TOKEN" "https://mwilde.kintone.com/k/v1/record.json?app=1&id=1"
 app.get('/getData', cors(corsOptions), async (req, res) => {
     const requestEndpoint1 = "https://xkcd.com/info.0.json";
     const response1 = await fetch(requestEndpoint1, fetchOptions);
